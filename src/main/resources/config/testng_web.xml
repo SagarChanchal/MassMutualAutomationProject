@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation" verbose="0" parallel="tests" thread-count="100">
+
+	<test name="Project Demo" enabled="true" thread-count="10">
+		<groups>
+			<run>
+				<include name="@ValidationOfCompleteProblem"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory"/>
+		</classes>
+	</test>
+</suite>
